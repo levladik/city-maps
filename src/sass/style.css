@@ -1,3 +1,10 @@
+html {
+  font-size: 10px;
+}
 
+.wrapper {
+  max-width: 1197px;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=style.css.map */
