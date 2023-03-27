@@ -1,0 +1,23 @@
+{
+  "name": "city-maps",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+	"style": "sass --watch src/sass/style.scss src/sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levladik/city-maps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/levladik/city-maps/issues"
+  },
+  "homepage": "https://github.com/levladik/city-maps#readme",
+  "dependencies": {
+    "sass": "^1.60.0"
+  }
+}
