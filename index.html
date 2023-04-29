@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./src/sass/style.css">
-	<title>Document</title>
-</head>
-<body>
-	<header>
-		<div class="wrapper">
-			<ul>
-				<li>
-					<img src="" alt="">
-				</li>
-				<li>Button</li>
-				<li>Cart</li>
-			</ul>
-		</div>
-	</header>
-	<main></main>
-	<footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mapbox API -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+	 <!-- Map CSS -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/sass/style.css" />
+    <title>Document</title>
+    <script src="./src/js/mapbox.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <ul>
+          <li>
+            <img src="" alt="" />
+          </li>
+          <li>Button</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div id="map" class="wrapper" style="width: 400px; height: 300px"></div>
+		<button id="fly">Fly</button>
+    </main>
+    <footer></footer>
+  </body>
 </html>
