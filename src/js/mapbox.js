@@ -6,15 +6,16 @@ const map = new mapboxgl.Map({
 	style: "mapbox://styles/levladik/ckwapxgan403m15qncaoootyf",
 });
 
-// Add Controls Buttons
+// Add Controls Buttons and Search Input
 const nav = new mapboxgl.NavigationControl();
-map.addControl(nav);
-		 
-// Fly to a random location
-const searchButton = document.getElementById('fly');
-	searchButton.addEventListener('click', () => {
-	map.flyTo({
-		center: [(Math.random() - 0.5) * 360, (Math.random() - 0.5) * 100],
-		essential: true // this animation is considered essential with respect to prefers-reduced-motion
-	});
+const geocoder = new MapboxGeocoder({
+	accessToken: mapboxgl.accessToken,
+	mapboxgl: mapboxgl,
+	autocomplete: false,
+	limit: 3,
+	types: 'place'
 });
+
+map.addControl(nav);
+map.addControl(geocoder);
+
